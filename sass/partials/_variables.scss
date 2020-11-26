@@ -1,28 +1,67 @@
 $backdrop__filter--privacy: blur(10px) contrast(25%);
+$bg__bas-img:
+    "../img/bgs/bg_1.jpg",
+    "../img/bgs/bg_4.png";
 $bg__blend--type: inherit;
+$bg__blend--multiply: multiply;
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "index",
+    "doctors",
+    "hw",
+    "bas",
+    "user";
 $bg__comingsoon-img: "../img/back_cs.jpg";
+$bg__doctors-img: "../img/bgs/bg_1.jpg";    
 $bg__error-img: "../img/back_cs.jpg";
+$bg__hw-img: "../img/bgs/bg_1.jpg";    
+$bg__index-img: 
+    "../img/bgs/bg_1.jpg",
+    "",
+    "../img/bgs/bg_4.png",
+    "../img/bgs/bg_3.jpg",
+    "../img/bgs/bg_5.png",
+    "../img/bgs/bg_6.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__user-img:
+    "../img/bgs/bg_1.jpg",
+    "../img/bgs/bg_4.png";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__index-img,
+    $bg__doctors-img,
+    $bg__hw-img,
+    $bg__bas-img,
+    $bg__user-img;
 $body__min-height: 100%;
 $border__param: 1px solid;
 $border__radius: 30px;
 $color__bg-1: #87ceeb;
 $color__blue: #1cafed;
 $color__dark: #333;
+$color__dark-blue: darken($color__blue,30%);
+$color__gray: #cdcdcd;
+$color__dark-gray: #777;
+$color__light-gray: #ececec;
 $color__white: #fff;
 $color__transparent: transparent;
+$filter-grayscale: grayscale(1);
 $font-logo__family: 'Titillium Web';
 $font-logo__size: 32px;
 $font-main__family: 'Titillium Web';
 $font-main__size: 16px;
+$header__height: 64px;
+$icon-bg__size: 40px;
+$owl-dot__bg: $color__bg-1;
+$owl-dot__bg-active: $color__blue;
+$owl-dot__margin: 10px;
+$owl-dot__size: 15px;
 $section__min-height: 100vh;
-$box_shadow: 0 0 3px $color__dark;
+$text-md: 16px;
+$text-lg: 20px;
 $text__shadow: 0 0 3px $color__dark;
+$box_shadow: 0 0 3px $color__dark;
