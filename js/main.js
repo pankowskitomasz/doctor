@@ -1,0 +1,11 @@
+$("#index-s4-owl,#index-s5-owl").owlCarousel({
+    loop:true,
+    responsive:{
+        0:{items:1},
+        600:{items:3},
+        840:{items:4}
+    }
+});
+$(".nav-menu-icon").click(function(){
+    $(".nav-menu").toggleClass("nav-menu--open");
+});

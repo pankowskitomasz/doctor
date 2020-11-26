@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/material-components-web/dist/material-components-web.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>e-Doctor | Book a Session</title>
+</head>
+<body>
+    <header class="mdc-top-app-bar border-none bg-white border-b border-dark shadow">
+        <nav class="mdc-top-app-bar__row">
+            <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <img class="navbar-logo float-left" src="img/navbar_logo.png" alt="logo">
+                <span class="font-bold text-blue font-logo">
+                    e-Doctor
+                </span>
+            </div>
+            <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end d-block desktop-expand">
+                <button class="mdc-top-app-bar__action-item mdc-icon-button nav-menu-icon">
+                    <div class="mdc-icon-button__ripple"></div>
+                    <span class="fa fa-bars text-blue"></span>                    
+                </button>
+                <div class="nav-menu text-right">
+                    <a href="index.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Home</span>                    
+                    </a>
+                    <a href="doctors.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Doctors</span>                    
+                    </a>
+                    <a href="how-it-works.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">How it works</span>                    
+                    </a>
+                    <a href="book-a-session.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Book a Session</span>                    
+                    </a>
+                    <a href="user.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Login</span>                    
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bas-s1 mdc-layout-grid flex bg-blue shadow tablet-minh-50vh pt-adjust">
+            <div class="mdc-layout-grid__inner w-100">
+                <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle text-center">
+                    <div class="text-white text-shadow">
+                        <h2>
+                            Book a Session 
+                        </h2>
+                        <h4>
+                            And Discover amazing world of online healthcare
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bas-s2 mdc-layout-grid minh-50vh">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12">
+                    <form class="text-md border border-blue p-2 mx-auto phone-w-75 tablet-w-50 desktop-w-35 bg-white">
+                        <label class="text-blue mb-2 font-bold">First name</label>
+                        <input type="text" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            name="fname"
+                            placeholder="First name...">
+                        <label class="text-blue mb-2 font-bold">Last name</label>
+                        <input type="text" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            name="flast"
+                            placeholder="Last name...">
+                        <label class="text-blue mb-2 font-bold">Email</label>
+                        <input type="email" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            name="femail"
+                            placeholder="Email...">
+                        <label class="text-blue mb-2 font-bold">Phone</label>
+                        <input type="tel" 
+                            class="form-control w-100 text-md mb-3"
+                            maxlength="18"
+                            name="fphone"
+                            placeholder="Phone...">
+                        <label class="text-blue mb-2 font-bold">Consultation</label>
+                        <select class="form-control w-100 text-md mb-3 bg-transparent">
+                            <option disabled selected>Consulation</option>
+                            <option value="allergy">Allergy</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="medical">Medical</option>
+                            <option value="psychology">Psychology</option>
+                        </select>
+                        <label class="text-blue mb-2 font-bold">Description</label>
+                        <textarea class="form-control w-100 text-md mb-3"
+                            name="fdesc"
+                            maxlength="250"></textarea>
+                        <div class="text-center">
+                            <input type="reset"
+                                class="mdc-button bg-blue text-white"
+                                value="Clear">
+                            <input type="submit"
+                                class="mdc-button bg-blue text-white"
+                                value="Accept">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mdc-layout-grid bg-dark text-white border-t border-gray">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">
+                <img class="navbar-logo filter-grayscale" src="img/navbar_logo.png" alt="logo">
+                <div class="font-bold text-dark-gray font-logo">
+                    e-Doctor
+                </div>
+                <address>
+                    +(00) 123-456-7890<br/>
+                    contact&#64;edoctor.mail
+                </address>
+            </div>
+            <div class="mdc-layout-grid__cell--span-12 text-center border-t border-gray">
+                <small class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">  
+                    Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+                    <a class="text-dark-gray link" href="privacy.html">Privacy policy</a>
+                </small>            
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

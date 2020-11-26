@@ -6,41 +6,404 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="node_modules/material-components-web/dist/material-components-web.min.css">
-    <title>Doctor | Coming soon!</title>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>e-Doctor | Online Healthcare</title>
 </head>
-<body class="text-shadow">
-    <header class="mdc-top-app-bar mdc-theme--background position-absolute bg-transparent">
+<body>
+    <header class="mdc-top-app-bar border-none bg-white border-b border-dark shadow">
         <nav class="mdc-top-app-bar__row">
             <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <a href="index.html" class="font-logo">
-                    <img class="navbar-logo float-left" src="img/navbar_logo.png" alt="logo">
-                    <span class="font-bold text-blue">
-                        Doctor
-                    </span>
-                </a>
+                <img class="navbar-logo float-left" src="img/navbar_logo.png" alt="logo">
+                <span class="font-bold text-blue font-logo">
+                    e-Doctor
+                </span>
+            </div>
+            <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end d-block desktop-expand">
+                <button class="mdc-top-app-bar__action-item mdc-icon-button nav-menu-icon">
+                    <div class="mdc-icon-button__ripple"></div>
+                    <span class="fa fa-bars text-blue"></span>                    
+                </button>
+                <div class="nav-menu text-right">
+                    <a href="index.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Home</span>                    
+                    </a>
+                    <a href="doctors.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Doctors</span>                    
+                    </a>
+                    <a href="how-it-works.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">How it works</span>                    
+                    </a>
+                    <a href="book-a-session.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Book a Session</span>                    
+                    </a>
+                    <a href="user.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label text-blue">Login</span>                    
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="comingsoon-s1 mdc-layout-grid mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-12  mdc-layout-grid__cell--align-middle text-center">
-                <div class="mdc-typography--headline5 text-white font-bold">
-                    <h2>Coming soon.</h2>
-                    <p>
-                        Hi, we are not ready yet, however we are staring soon.<br>
-                        Please visit us again in a while.
-                    </p>
+        <section class="index-s1 mdc-layout-grid flex bg-blue shadow tablet-minh-50vh pt-adjust">
+            <div class="mdc-layout-grid__inner mdc-layout-grid">
+                <div class="mdc-layout-grid__cell--span-10-phone mdc-layout-grid__cell--span-7-tablet mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--align-middle">
+                    <div class="text-white text-shadow">
+                        <h2>
+                            Virtual Healthcare When You Need It Most 
+                        </h2>
+                        <h4>
+                            For Anyone, Anywhere, at Anytime.
+                        </h4>
+                        <a href="book-a-session.html" class="mdc-button mdc-button--raised bg-dark-blue">
+                            <div class="mdc-button__ripple"></div>
+                            <div class="mdc-button__label text-white font-bold">Join now!</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="index-s2 mdc-layout-grid minh-50vh">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12">
+                    <h2 class="text-center text-blue">
+                        Meet Our Doctors
+                    </h2>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-card mdc-card--outlined h-100">
+                        <div class="mdc-layout-grid__cell">
+                            <img src="img/team/carrie_shaw.jpg" alt="carrie shaw" class="bg-blue img-fit-25vh">
+                        </div>
+                        <div class="mdc-layout-grid__cell mb-4">
+                            <h4 class="text-center text-blue m-0">
+                                Carrie Shaw, M.D.
+                            </h4>
+                            <p class="m-0 p-1 text-center">
+                                Professor at the University of Yaoundé and Consultant  
+                                at Yaoundé Central Hospital. She is head of the Medical 
+                                Centre of the University of Yaoundé.
+                            </p>
+                        </div>
+                        <div class="mdc-layout-grid__cell position-absolute position-bottom w-100 p-1">
+                            <a href="doctors.html#carrie-shaw" class="mdc-button mdc-button--raised w-100 bg-blue">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">See more</span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-card mdc-card--outlined h-100">
+                        <div class="mdc-layout-grid__cell">
+                            <img src="img/team/evelyn_bright.jpg" alt="evelyn bright" class="bg-blue img-fit-25vh">
+                        </div>
+                        <div class="mdc-layout-grid__cell mb-4">
+                            <h4 class="text-center text-blue m-0">
+                                Evelyn Bright, M.D.
+                            </h4>
+                            <p class="m-0 p-1 text-center">
+                                Doctor of General Medicine with twelve years of practice, 
+                                including five years practice in local hospitals. 
+                            </p>
+                        </div>
+                        <div class="mdc-layout-grid__cell position-absolute position-bottom w-100 p-1">
+                            <a href="doctors.html#evelyn-bright" class="mdc-button mdc-button--raised w-100 bg-blue">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">See more</span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-card mdc-card--outlined h-100">
+                        <div class="mdc-layout-grid__cell">
+                            <img src="img/team/john_cadwell.jpg" alt="john cadwell" class="bg-blue img-fit-25vh">
+                        </div>
+                        <div class="mdc-layout-grid__cell mb-4">
+                            <h4 class="text-center text-blue m-0">
+                                John Cadwell, M.D
+                            </h4>
+                            <p class="m-0 p-1 text-center">
+                                Paediatrician with six years practice in local hospital and
+                                seven years in his own practice. Well known and appreciated
+                                by his young patiens.
+                            </p>
+                        </div>
+                        <div class="mdc-layout-grid__cell position-absolute position-bottom w-100 p-1">
+                            <a href="doctors.html#john-cadwell" class="mdc-button mdc-button--raised w-100 bg-blue">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">See more</span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-card mdc-card--outlined h-100">
+                        <div class="mdc-layout-grid__cell">
+                            <img src="img/team/mark_wayne.jpg" alt="mark wayne" class="bg-blue img-fit-25vh">
+                        </div>
+                        <div class="mdc-layout-grid__cell mb-4">
+                            <h4 class="text-center text-blue m-0">
+                                Mark Wayne, M.D.
+                            </h4>
+                            <p class="m-0 p-1 text-center">
+                                He formerly worked in Paris, France as lecturer/registrar 
+                                specialist at Paris VII Medical School and StLouis University 
+                                Hospital, at the Department of Endocrinology and Diabetes
+                            </p>
+                        </div>
+                        <div class="mdc-layout-grid__cell position-absolute position-bottom w-100 p-1">
+                            <a href="doctors.html#mark-wayne" class="mdc-button mdc-button--raised w-100 bg-blue">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">See more</span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s3 mdc-layout-grid minh-25vh p-4">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12 border-t border-blue">
+                    <h2 class="text-center text-blue">
+                        How It Works
+                    </h2>
+                    <p class="text-center text-lg text-dark-gray p-2">
+                        We do know the right way to do online consultations: asynchronously, 
+                        where a patient fills out a structured online questionnaire that the doctor 
+                        checks at a later date; and synchronously, where both parties talk to each 
+                        other at the same time, using video technology
+                    </p>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-5 minh-25vh">
+                        <div class="mdc-card mdc-card--outlined">
+                            <img src="img/bgs/bg_2.jpg" alt="smartphone" class="phone-img-25vh tablet-img-50vh w-100">
+                        </div>
+                    </div>
+                    <div class="mdc-layou-grid__cell--span-12-phone mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-7 p-2 phone-text-center">
+                        <div class="mb-3">
+                            <span class="fa fa-comments-o icon-big text-blue"></span>
+                            <h4 class="text-blue text-lg m-0">
+                                Start a Chat
+                            </h4>
+                            <p class="m-0">
+                                You can send your health questions via Chat. Within minutes, you'll 
+                                get advice and recommendations from one of our expert physicians.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <span class="fa fa-edit icon-big text-blue"></span>
+                            <h4 class="text-blue text-lg m-0">
+                                Choose a Plan
+                            </h4>
+                            <p class="m-0 mb-3">
+                                Do you qualify for healthcare? You might have Medicare plan options 
+                                beyond the federal program. Find out about our healthcare plans, 
+                                Prescription Drug Plans, and Supplement plans.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <span class="fa fa-calendar icon-big text-blue"></span>
+                            <h4 class="text-blue text-lg m-0">
+                                Book a Session
+                            </h4>
+                            <p class="m-0 mb-3">
+                                Each consultation carries a flat fee of only 49,99€ and will be 
+                                organized at most 2 hours within your scheduled booking. We connect 
+                                you to international English, Spanish and French speaking doctors for 
+                                medical consultations within minutes. Book in a few simple steps your 
+                                qualified online doctor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s4 mdc-layout-grid minh-50vh bg-dark">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12 text-white">
+                    <h2 class="text-center text-blue">
+                        Consult Online
+                    </h2>
+                    <p class="text-center text-lg text-white">
+                        Visit doctor online without leaving your home.
+                    </p>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12">
+                    <div class="owl-carousel text-center" id="index-s4-owl">
+                        <a class="mdc-layout-grid__cell minh-25vh"
+                        href="book-a-session.html#medical">
+                            <div class="mdc-button__ripple"></div>
+                            <img src="img/consult/consult_1.jpg" alt="Medical Consultation" class="border border-blue">
+                            <div class="mdc-button__label text-blue font-bold text-center no-underline">
+                                Medical Consultation
+                            </div>
+                        </a>
+                        <a class="mdc-layout-grid__cell minh-25vh"
+                            href="book-a-session.html#allergy">
+                            <div class="mdc-button__ripple"></div>
+                            <img src="img/consult/consult_2.jpg" alt="Allergy Consultation" class="border border-blue">
+                            <div class="mdc-button__label text-blue font-bold text-center">
+                                Allergy Consultation
+                            </div>
+                        </a>
+                        <a class="mdc-layout-grid__cell minh-25vh"
+                            href="book-a-session.html#psychology">
+                            <div class="mdc-button__ripple"></div>
+                            <img src="img/consult/consult_3.jpg" alt="Psychology Consultation" class="border border-blue">
+                            <div class="mdc-button__label text-blue font-bold text-center">
+                                Psychology Consultation
+                            </div>
+                        </a>
+                        <a class="mdc-layout-grid__cell minh-25vh"
+                            href="book-a-session.html#dermatology">
+                            <div class="mdc-button__ripple"></div>
+                            <img src="img/consult/consult_4.jpg" alt="Psychiatry Consultation" class="border border-blue">
+                            <div class="mdc-button__label text-blue font-bold text-center">
+                                Dermatology Consultation
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section class="index-s5 mdc-layout-grid minh-50vh bg-light-gray">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12">
+                    <h2 class="text-center text-blue">
+                        Patient Stories
+                    </h2>
+                    <p class="text-center text-lg text-dark-gray">
+                        Check what our patients think about us.
+                    </p>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12">
+                    <div class="owl-carousel" id="index-s5-owl"> 
+                        <div class="mdc-layout-grid__cell minh-25vh p-1">
+                            <img src="img/patients/ruth_d.jpg" alt="Psychiatry Consultation" class=" img-rounded-50 border border-dark">
+                            <div class="mdc-button__label text-center">
+                                <h4 class="font-bold">
+                                    Ruth D.
+                                </h4>
+                                <p>
+                                    As a temporary employee, I didn't qualify for the company's 
+                                    health plan. But, I found affordable options at e-Doctor
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid__cell minh-25vh p-1">
+                            <img src="img/patients/kelly_t.jpg" alt="Psychiatry Consultation" class=" img-rounded-50 border border-dark">
+                            <div class="mdc-button__label text-center">
+                                <h4 class="font-bold">
+                                    Kelly T.
+                                </h4>
+                                <p>
+                                    My parent's plan wouldn't cover me, and I didn't qualify 
+                                    for Obamacare. I was desperate and hopeless, until I found 
+                                    e-Doctor
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid__cell minh-25vh p-1">
+                            <img src="img/patients/thomas_e.jpg" alt="Psychiatry Consultation" class="img-rounded-50 border border-dark">
+                            <div class="mdc-button__label text-center">
+                                <h4 class="font-bold">
+                                    Thomas E.
+                                </h4>
+                                <p>
+                                    Life was a bit chaotic after my divorce; moving; career changes. 
+                                    I couldn't afford my ex-wife's plan, but eHealth had affordable 
+                                    options
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid__cell minh-25vh p-1">
+                            <img src="img/patients/adriana_m.jpg" alt="Psychiatry Consultation" class="img-rounded-50 border border-dark">
+                            <div class="mdc-button__label text-center">
+                                <h4 class="font-bold">
+                                    Adriana M.
+                                </h4>
+                                <p>
+                                    We couldn't afford health insurance before, so we relied on charity 
+                                    hospitals. Now we have affordable coverage, thanks e-Doctor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+        </section>
+        <section class="index-s6 mdc-layout-grid minh-50vh bg-gray">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12 text-white text-shadow">
+                    <h2 class="text-center">
+                        Join us!
+                    </h2>
+                    <p class="text-center text-lg">
+                        Without leaving home, without risk, easy and comfortable.
+                    </p>
+                </div>
+                <div class="mdc-layout-grid__cell--span-12 flex bg-transparent">
+                    <form class="text-md border border-blue p-2 mx-auto phone-w-75 tablet-w-50 desktop-w-35 bg-white">
+                        <label class="text-blue mb-2 font-bold">Full name</label>
+                        <input type="text" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            placeholder="Full name...">
+                        <label class="text-blue mb-2 font-bold">Email</label>
+                        <input type="email" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            placeholder="Email...">
+                        <label class="text-blue mb-2 font-bold">Phone</label>
+                        <input type="tel" 
+                            class="form-control w-100 text-md mb-3"
+                            maxlength="18"
+                            placeholder="Phone...">
+                        <div class="text-center">
+                            <input type="reset"
+                                class="mdc-button bg-blue text-white"
+                                value="Clear">
+                            <input type="submit"
+                                class="mdc-button bg-blue text-white"
+                                value="Send">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
     </main>
-    <footer class="mdc-layout-grid mdc-layout-grid__inner bg-dark text-white">
-        <small class="mdc-layout-grid__cell--span-12 text-center">  
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="text-white link" href="privacy.html">Privacy policy</a>
-        </small>
+    <footer class="mdc-layout-grid bg-dark text-white border-t border-gray">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">
+                <img class="navbar-logo filter-grayscale" src="img/navbar_logo.png" alt="logo">
+                <div class="font-bold text-dark-gray font-logo">
+                    e-Doctor
+                </div>
+                <address>
+                    +(00) 123-456-7890<br/>
+                    contact&#64;edoctor.mail
+                </address>
+            </div>
+            <div class="mdc-layout-grid__cell--span-12 text-center border-t border-gray">
+                <small class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">  
+                    Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+                    <a class="text-dark-gray link" href="privacy.html">Privacy policy</a>
+                </small>            
+            </div>
+        </div>
     </footer>
     <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
