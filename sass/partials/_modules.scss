@@ -14,6 +14,9 @@
     object-fit: cover;        
     width: 100%;
 }
+.align-center{
+    align-items: center;
+}
 .bas{
     &-s1{
         @include background-blend($bg__blend--multiply, inherit);
@@ -84,6 +87,11 @@
         width: 100%;
     }
 }
+.btn{
+    &-sm{
+        min-width: $btn-sm__width !important;
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
@@ -95,6 +103,12 @@
     }
     &-contents{
         display: contents !important;
+    }
+    &-flex{
+        display: flex !important;
+    }
+    &-inline-block{
+        display: flex !important;
     }
 }
 .doctors{
@@ -119,6 +133,9 @@
 .float{
     &-left{
         float: left;
+    }
+    &-right{
+        float: right;
     }
 }
 .font{
@@ -230,6 +247,20 @@
             margin-bottom: 40px !important;
         }
     }
+    &r{
+        &-1{
+            margin-right: 10px !important;
+        }
+        &-2{
+            margin-right: 20px !important;
+        }
+    }
+    &x{
+        &-auto{
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
 }
 .minh{
     &-25vh{
@@ -249,6 +280,11 @@
     }
     &-215px{
         min-height: 215px;
+    }
+}
+.minw{
+    &-30px{
+        min-width: 30px !important;
     }
 }
 .mx{
@@ -316,6 +352,9 @@
     }
 }
 .p{
+    &-0{
+        padding: 0px !important;
+    }
     &-1{
         padding: 10px !important;
     }
@@ -327,6 +366,17 @@
     }
     &-4{
         padding: 40px !important;
+    }
+    &b{
+        &-0{
+            padding-bottom: 0px !important;
+        }
+        &-1{
+            padding-bottom: 10px !important;
+        }
+        &-2{
+            padding-bottom: 20px !important;
+        }
     }
     &t-adjust{
         padding-top: $header__height !important;
@@ -400,6 +450,15 @@
     }
 }
 .w{
+    &-20{
+        width: 20% !important;
+    }
+    &-40px{
+        width: 40px !important;
+    }
+    &-80{
+        width: 80% !important;
+    }
     &-100{
         width: 100% !important;
     }
