@@ -41,7 +41,7 @@
                         <div class="mdc-button__ripple"></div>
                         <span class="mdc-button__label text-blue">Book a Session</span>                    
                     </a>
-                    <a href="user.html" class="mdc-top-app-bar__action-item mdc-button nav-item">
+                    <a href="user.php" class="mdc-top-app-bar__action-item mdc-button nav-item">
                         <div class="mdc-button__ripple"></div>
                         <span class="mdc-button__label text-blue">Login</span>                    
                     </a>
@@ -69,13 +69,13 @@
             </div>
         </section>
         <section class="index-s2 mdc-layout-grid minh-50vh">
-            <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__inner w-80 mx-auto">
                 <div class="mdc-layout-grid__cell--span-12">
                     <h2 class="text-center text-blue">
                         Meet Our Doctors
                     </h2>
                 </div>
-                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-card mdc-card--outlined h-100">
                         <div class="mdc-layout-grid__cell">
                             <img src="img/team/carrie_shaw.jpg" alt="carrie shaw" class="bg-blue img-fit-25vh">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-card mdc-card--outlined h-100">
                         <div class="mdc-layout-grid__cell">
                             <img src="img/team/evelyn_bright.jpg" alt="evelyn bright" class="bg-blue img-fit-25vh">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-card mdc-card--outlined h-100">
                         <div class="mdc-layout-grid__cell">
                             <img src="img/team/john_cadwell.jpg" alt="john cadwell" class="bg-blue img-fit-25vh">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-3-desktop">
+                <div class="mdc-layout-grid__cell--span-12-phone mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-card mdc-card--outlined h-100">
                         <div class="mdc-layout-grid__cell">
                             <img src="img/team/mark_wayne.jpg" alt="mark wayne" class="bg-blue img-fit-25vh">
@@ -169,7 +169,7 @@
             </div>
         </section>
         <section class="index-s3 mdc-layout-grid minh-25vh p-4">
-            <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__inner w-80 mx-auto">
                 <div class="mdc-layout-grid__cell--span-12 border-t border-blue">
                     <h2 class="text-center text-blue">
                         How It Works
@@ -226,7 +226,7 @@
                 </div>
             </div>
         </section>
-        <section class="index-s4 mdc-layout-grid minh-50vh bg-dark">
+        <section class="index-s4 mdc-layout-grid minh-25vh bg-dark flex align-center">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell--span-12 text-white">
                     <h2 class="text-center text-blue">
@@ -274,8 +274,8 @@
                 </div>                
             </div>
         </section>
-        <section class="index-s5 mdc-layout-grid minh-50vh bg-light-gray">
-            <div class="mdc-layout-grid__inner">
+        <section class="index-s5 mdc-layout-grid minh-50vh bg-light-gray flex align-center">
+            <div class="mdc-layout-grid__inner w-100">
                 <div class="mdc-layout-grid__cell--span-12">
                     <h2 class="text-center text-blue">
                         Patient Stories
@@ -350,53 +350,78 @@
                         Without leaving home, without risk, easy and comfortable.
                     </p>
                 </div>
-                <div class="mdc-layout-grid__cell--span-12 flex bg-transparent">
-                    <form class="text-md border border-blue p-2 mx-auto phone-w-75 tablet-w-50 desktop-w-35 bg-white">
-                        <label class="text-blue mb-2 font-bold">Full name</label>
+                <div class="mdc-layout-grid__cell--span-12 flex bg-transparent">                    
+                    <form class="text-md border border-blue p-2 mx-auto phone-w-75 tablet-w-50 desktop-w-35 bg-white"
+                        action="error.php"
+                        method="post">
+                        <label class="text-blue mb-2 font-bold">First name</label>
                         <input type="text" 
                             class="form-control w-100 text-md mb-1"
                             maxlength="80"
-                            placeholder="Full name...">
+                            name="fname"
+                            placeholder="First name...">
+                        <label class="text-blue mb-2 font-bold">Last name</label>
+                        <input type="text" 
+                            class="form-control w-100 text-md mb-1"
+                            maxlength="80"
+                            name="flast"
+                            placeholder="Last name...">
                         <label class="text-blue mb-2 font-bold">Email</label>
                         <input type="email" 
                             class="form-control w-100 text-md mb-1"
                             maxlength="80"
+                            name="femail"
                             placeholder="Email...">
                         <label class="text-blue mb-2 font-bold">Phone</label>
                         <input type="tel" 
                             class="form-control w-100 text-md mb-3"
                             maxlength="18"
+                            name="fphone"
                             placeholder="Phone...">
+                        <label class="text-blue mb-2 font-bold">Consultation</label>
+                        <select class="form-control w-100 text-md mb-3 bg-transparent"
+                            name="fconsult">
+                            <option disabled selected>Consulation</option>
+                            <option value="allergy">Allergy</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="medical">Medical</option>
+                            <option value="psychology">Psychology</option>
+                        </select>
+                        <label class="text-blue mb-2 font-bold">Description</label>
+                        <textarea class="form-control w-100 text-md mb-3"
+                            name="fdesc"
+                            maxlength="250"></textarea>
                         <div class="text-center">
                             <input type="reset"
                                 class="mdc-button bg-blue text-white"
                                 value="Clear">
                             <input type="submit"
                                 class="mdc-button bg-blue text-white"
-                                value="Send">
+                                value="Accept">
                         </div>
                     </form>
-                </div>
-                
+                </div>                
             </div>
         </section>
     </main>
-    <footer class="mdc-layout-grid bg-dark text-white border-t border-gray">
+    <footer class="mdc-layout-grid bg-dark text-white border-t border-gray pb-0">
         <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">
+            <div class="mdc-layout-grid__cell--span-12 text-center text-white">
                 <img class="navbar-logo filter-grayscale" src="img/navbar_logo.png" alt="logo">
-                <div class="font-bold text-dark-gray font-logo">
-                    e-Doctor
+                <div class="font-bold text-white font-logo">
+                    <small>e-Doctor</small>
                 </div>
                 <address>
-                    +(00) 123-456-7890<br/>
-                    contact&#64;edoctor.mail
+                    <small>
+                        +(00) 123-456-7890<br/>
+                        contact&#64;edoctor.mail
+                    </small>
                 </address>
             </div>
-            <div class="mdc-layout-grid__cell--span-12 text-center border-t border-gray">
-                <small class="mdc-layout-grid__cell--span-12 text-center text-dark-gray">  
-                    Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-                    <a class="text-dark-gray link" href="privacy.html">Privacy policy</a>
+            <div class="mdc-layout-grid__cell--span-12 text-center border-t border-dark-gray">
+                <small class="mdc-layout-grid__cell--span-12 text-center text-white">  
+                    Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
+                    <a class="text-white link" href="privacy.html">Privacy policy</a>
                 </small>            
             </div>
         </div>
