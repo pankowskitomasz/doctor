@@ -15,9 +15,13 @@ if(!isset($_SESSION["errorMessage"])){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+        <meta property="og:title" content="Doctor">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:locale" content="en_US">
         <link rel="icon" href="img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="node_modules/material-components-web/dist/material-components-web.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.min.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <title>e-Doctor | Error</title>
@@ -110,16 +114,13 @@ if(!isset($_SESSION["errorMessage"])){
                 </div>
                 <div class="mdc-layout-grid__cell--span-12 text-center border-t border-dark-gray">
                     <small class="mdc-layout-grid__cell--span-12 text-center text-white">  
-                        Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
+                        Copyright &copy; 2020-2022 Tomasz Pankowski. All rights reserved.
                         <a class="text-white link" href="privacy.html">Privacy policy</a>
                     </small>            
                 </div>
             </div>
         </footer>
-    <script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>
 <?php $_SESSION["errorMessage"]=null ?>
